@@ -3,7 +3,7 @@ package org.example.hackerRankProblems;
 import java.util.Arrays;
 import java.util.Random;
 
-public class sortArray {
+public class SortArray {
     public static void main(String[] args) {
 
         int[] unsortedArray = getRandomArray(5);
