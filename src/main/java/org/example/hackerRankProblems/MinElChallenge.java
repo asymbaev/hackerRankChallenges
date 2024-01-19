@@ -1,11 +1,19 @@
 package org.example.hackerRankProblems;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MinElChallenge {
 
+    public static void main(String[] args) {
+        int[] numbers = readIntegers();
+        System.out.println("Numbers entered: " + Arrays.toString(numbers));
+        int min = findMin(numbers);
+        System.out.println("Minimum values: " + min);
+    }
 
-    public int[] readIntegers() {
+
+    public static int[] readIntegers() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter comma-separated integers: ");
         String input = scanner.nextLine();
@@ -17,5 +25,9 @@ public class MinElChallenge {
         return numbers;
 
 
+    }
+    public static int findMin(int[] numbers) {
+        Arrays.sort(numbers);
+        return numbers[0];
     }
 }
