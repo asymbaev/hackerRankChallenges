@@ -9,6 +9,12 @@ public class DiagonalDifference {
         int sumOfLeft = 0;
         int sumOfRight = 0;
 
+        for (int i = 0; i < n; i++) {
+            sumOfLeft += arr.get(i).get(n - 1 - i);
+            sumOfRight += arr.get(i).get(i);
+        }
+        return Math.abs(sumOfLeft-sumOfRight);
+
 
     }
 }
